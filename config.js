@@ -28,8 +28,8 @@ module.exports = {
         colors: {
             primary: "#3730a3",
             textPrimary: "#1e293b",
-            textSecondary: "#ffffff",
-            textTertiary: "#ffffff",
+            textSecondary: "#1e293b",
+            textTertiary: "#1e293b",
             backgroundPrimary: "#f3f4f6",
             backgroundSecondary: "#f3f4f6",
             accent: "#c7d2fe",
