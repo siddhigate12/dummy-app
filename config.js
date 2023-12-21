@@ -13,7 +13,8 @@ module.exports = {
             navLinks: {
                 alignment: 'center',
                 links: [
-                    { title: 'Visit Fable', url: 'https://sharefable.com' }
+                    { title: 'Visit Fable', url: 'https://sharefable.com' },
+                    { title: 'New link Fable', url: 'https://sharefable.com' },
                 ]
             }
         },
