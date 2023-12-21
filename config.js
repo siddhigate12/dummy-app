@@ -18,7 +18,7 @@ module.exports = {
             }
         },
         sidepanel: {
-            showSidePanel: true
+            showSidePanel: false
         },
         content: {},
         footer: {},
