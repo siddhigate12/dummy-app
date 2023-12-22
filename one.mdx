@@ -1,3 +1,9 @@
+---
+  urlTitle: Getting started
+  title: This is the first doc
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+---
+
 import Seven from "./Seven.jsx";
 
 # ONE
@@ -61,12 +67,6 @@ import Seven from "./Seven.jsx";
           }}>
             <h2>{element.frontmatter?.title}</h2>
             <p>{element.frontmatter?.description}</p>
-            <img src={element.frontmatter?.image} alt={element.frontmatter?.title} 
-              style={{
-                width: '100%',
-                height: 'auto',
-                borderRadius: '4px',
-              }} />
           </div>
         ))}
       </div>
