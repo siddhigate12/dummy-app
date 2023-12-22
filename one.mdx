@@ -6,9 +6,7 @@ import Seven from "./Seven.jsx";
 
 <Seven />
 
-export default ({globalState, addToGlobalState, manifest}) => {
-  console.log(manifest);
-  return (
+  console.log(props.manifest);
     <>
       <h1>Rendering Text from JSON111</h1>
       <div>
@@ -50,7 +48,7 @@ export default ({globalState, addToGlobalState, manifest}) => {
         </button>
       </div>
       <div style={{display: "flex"}}>
-        {manifest.tree.children.filter(el => el.nodeType === "file" && el.ext === ".mdx" && el.frontmatter.title)
+        {props.manifest.tree.children.filter(el => el.nodeType === "file" && el.ext === ".mdx" && el.frontmatter.title)
         .map((element, index) => (
           <div key={index} style={{
             border: '1px solid #ddd',
@@ -73,5 +71,3 @@ export default ({globalState, addToGlobalState, manifest}) => {
         ))}
       </div>
     </>
-  );
-};
