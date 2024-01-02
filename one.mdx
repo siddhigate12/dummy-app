@@ -12,7 +12,6 @@ import Seven from "./Seven.jsx";
 
 <Seven />
 
-  console.log(props.manifest);
     <>
       <h1>Rendering Text from JSON111</h1>
       <div>
@@ -20,7 +19,7 @@ import Seven from "./Seven.jsx";
         <button 
         type="button" 
         onClick={ () => {
-    addToGlobalState("bg", "limegreen")
+    props.addToGlobalState("bg", "limegreen")
   }}
         >
         Limegreen
