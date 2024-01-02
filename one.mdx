@@ -28,7 +28,7 @@ import Seven from "./Seven.jsx";
         <button 
         type="button" 
         onClick={ () =>{
-    addToGlobalState("bg", "pink")
+    props.addToGlobalState("bg", "pink")
   }}
         >
         Pink
@@ -39,7 +39,7 @@ import Seven from "./Seven.jsx";
         <button 
         type="button" 
         onClick={ () => {
-    addToGlobalState("color", "white")
+    props.addToGlobalState("color", "white")
   }}
         >
         White
@@ -47,7 +47,7 @@ import Seven from "./Seven.jsx";
         <button 
         type="button" 
         onClick={ () =>{
-    addToGlobalState("color", "purple")
+    props.addToGlobalState("color", "purple")
   }}
         >
         purple
@@ -62,8 +62,8 @@ import Seven from "./Seven.jsx";
             padding: '16px',
             margin: '16px',
             maxWidth: '300px',  
-            background: `${globalState.bg || "pink"}`,
-            color: `${globalState.color || "black"}`,
+            background: `${props.globalState.bg || "pink"}`,
+            color: `${props.globalState.color || "black"}`,
           }}>
             <h2>{element.frontmatter?.title}</h2>
             <p>{element.frontmatter?.description}</p>
